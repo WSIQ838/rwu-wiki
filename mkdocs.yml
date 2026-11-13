@@ -1,0 +1,169 @@
+site_name: Rail Works Universe Wiki
+site_description: Stations, routes, trains and a network map for Rail Works Universe (RWU), a railway game on Roblox.
+site_url: https://wsiq838.github.io/rwu-wiki/
+repo_url: https://github.com/WSIQ838/rwu-wiki
+repo_name: WSIQ838/rwu-wiki
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  palette:
+  - scheme: slate
+    primary: indigo
+    accent: pink
+    toggle:
+      icon: material/weather-sunny
+      name: Light mode
+  - scheme: default
+    primary: indigo
+    accent: pink
+    toggle:
+      icon: material/weather-night
+      name: Dark mode
+  features:
+  - navigation.tabs
+  - navigation.indexes
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.action.edit
+markdown_extensions:
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+nav:
+- Home: index.md
+- Network map: map.md
+- Live map: live.md
+- Stations:
+  - stations/index.md
+  - Ashcombe: stations/ashcombe.md
+  - Bramley Cross: stations/bramley-cross.md
+  - Breakwater: stations/breakwater.md
+  - Brookfield: stations/brookfield.md
+  - Cedar Falls: stations/cedar-falls.md
+  - Chester Road: stations/chester-road.md
+  - Clayton: stations/clayton.md
+  - Copper Hill: stations/copper-hill.md
+  - Dunes Road: stations/dunes-road.md
+  - Dunmore: stations/dunmore.md
+  - Eastfield: stations/eastfield.md
+  - Ellwood: stations/ellwood.md
+  - Elm Park: stations/elm-park.md
+  - Fenwick: stations/fenwick.md
+  - Fernhill: stations/fernhill.md
+  - Foundry Street: stations/foundry-street.md
+  - Granite Springs: stations/granite-springs.md
+  - Gull Point: stations/gull-point.md
+  - Harrowby: stations/harrowby.md
+  - Hartwell Airport Central Terminal: stations/hartwell-airport-central-terminal.md
+  - Hartwell Airport Parkway: stations/hartwell-airport-parkway.md
+  - Hartwell Airport Terminal 3: stations/hartwell-airport-terminal-3.md
+  - Hazel Cross: stations/hazel-cross.md
+  - Hollis Green: stations/hollis-green.md
+  - Hunter's Point: stations/hunter-s-point.md
+  - Ivy Lane: stations/ivy-lane.md
+  - Kestrel Cove: stations/kestrel-cove.md
+  - Kingsbury: stations/kingsbury.md
+  - Lakeview: stations/lakeview.md
+  - Lighthouse Lane: stations/lighthouse-lane.md
+  - Lowell Park: stations/lowell-park.md
+  - Maple Heights: stations/maple-heights.md
+  - Marlow: stations/marlow.md
+  - Merrow Sands: stations/merrow-sands.md
+  - Millbrook Falls: stations/millbrook-falls.md
+  - Northgate Road: stations/northgate-road.md
+  - Oak Ridge: stations/oak-ridge.md
+  - Oakhurst: stations/oakhurst.md
+  - Pelican Shores: stations/pelican-shores.md
+  - Pinecrest: stations/pinecrest.md
+  - Porthaven: stations/porthaven.md
+  - Ravensworth: stations/ravensworth.md
+  - Redwood Park: stations/redwood-park.md
+  - Riverside: stations/riverside.md
+  - Saltmarsh: stations/saltmarsh.md
+  - Sandy Hollow: stations/sandy-hollow.md
+  - Seabright Junction: stations/seabright-junction.md
+  - Silver Lake: stations/silver-lake.md
+  - Stanton Cross: stations/stanton-cross.md
+  - Thornbury: stations/thornbury.md
+  - Tidewell: stations/tidewell.md
+  - Union Station: stations/union-station.md
+  - Westbourne: stations/westbourne.md
+  - Wexley Junction: stations/wexley-junction.md
+  - Whitcliffe Bay: stations/whitcliffe-bay.md
+- Routes:
+  - lines/index.md
+  - "MetroLink Union Station - Granite Springs": lines/ml-uns-w07.md
+  - "MetroLink Union Station - Pinecrest": lines/ml-uns-n10.md
+  - "MetroLink Union Station - Hunter's Point": lines/ml-uns-e07.md
+  - "MetroLink Union Station - Whitcliffe Bay": lines/ml-uns-wcb.md
+  - "MetroLink Granite Springs - Pinecrest": lines/ml-w07-n10.md
+  - "MetroLink Granite Springs - Hunter's Point": lines/ml-w07-e07.md
+  - "MetroLink Granite Springs - Whitcliffe Bay": lines/ml-w07-wcb.md
+  - "MetroLink Pinecrest - Whitcliffe Bay via Union": lines/ml-n10-wcb.md
+  - "MetroLink Pinecrest - Hunter's Point via Union": lines/ml-n10-e07.md
+  - "MetroLink Hunter's Point - Whitcliffe Bay via Union": lines/ml-e07-wcb.md
+  - "Coastline Union Station - Union Station via Merrow Sands": lines/cl-loop.md
+  - "Coastline Merrow Sands - Gull Point": lines/cl-mrs-glp.md
+  - "Coastline Union Station - Gull Point": lines/cl-uns-glp.md
+  - "Coastline Union Station - Merrow Sands": lines/cl-uns-mrs.md
+  - "Express Union Station - Granite Springs": lines/ex-uns-w07.md
+  - "Express Union Station - Pinecrest": lines/ex-uns-n10.md
+  - "Express Union Station - Hunter's Point": lines/ex-uns-e07.md
+  - "Express Union Station - Gull Point": lines/ex-uns-glp.md
+  - "Express Union Station - Merrow Sands": lines/ex-uns-mrs.md
+  - "Express Granite Springs - Pinecrest": lines/ex-w07-n10.md
+  - "Express Granite Springs - Hunter's Point": lines/ex-w07-e07.md
+  - "Express Granite Springs - Gull Point": lines/ex-w07-glp.md
+  - "Express Granite Springs - Merrow Sands": lines/ex-w07-mrs.md
+  - "Express Pinecrest - Hunter's Point via Union": lines/ex-n10-e07.md
+  - "Express Pinecrest - Gull Point via Union": lines/ex-n10-glp.md
+  - "Express Pinecrest - Merrow Sands via Union": lines/ex-n10-mrs.md
+  - "Express Hunter's Point - Gull Point via Union": lines/ex-e07-glp.md
+  - "Express Hunter's Point - Merrow Sands via Union": lines/ex-e07-mrs.md
+  - "JetRail Union Station - Hartwell Airport Terminal 3": lines/jr-uns-at3.md
+  - "JetRail Union Station - Hartwell Airport Central Terminal": lines/jr-uns-at2.md
+  - "JetRail Union Station - Hartwell Airport Parkway": lines/jr-uns-at1.md
+  - "MetroLink Limited Union Station - Granite Springs": lines/ml-uns-w07-l.md
+  - "MetroLink Limited Union Station - Pinecrest": lines/ml-uns-n10-l.md
+  - "MetroLink Limited Union Station - Hunter's Point": lines/ml-uns-e07-l.md
+  - "MetroLink Limited Union Station - Whitcliffe Bay": lines/ml-uns-wcb-l.md
+  - "MetroLink Limited Granite Springs - Pinecrest": lines/ml-w07-n10-l.md
+  - "MetroLink Limited Granite Springs - Hunter's Point": lines/ml-w07-e07-l.md
+  - "MetroLink Limited Granite Springs - Whitcliffe Bay": lines/ml-w07-wcb-l.md
+  - "MetroLink Limited Pinecrest - Whitcliffe Bay via Union": lines/ml-n10-wcb-l.md
+  - "MetroLink Limited Pinecrest - Hunter's Point via Union": lines/ml-n10-e07-l.md
+  - "MetroLink Limited Hunter's Point - Whitcliffe Bay via Union": lines/ml-e07-wcb-l.md
+  - "Coastline Limited Union Station - Union Station via Merrow Sands": lines/cl-loop-l.md
+  - "Coastline Limited Merrow Sands - Gull Point": lines/cl-mrs-glp-l.md
+  - "Coastline Limited Union Station - Gull Point": lines/cl-uns-glp-l.md
+  - "Coastline Limited Union Station - Merrow Sands": lines/cl-uns-mrs-l.md
+  - "MetroLink Thornbury Branch": lines/ml-thb.md
+  - "MetroLink Thornbury - Gull Point": lines/ml-tg.md
+- Trains:
+  - trains/index.md
+  - Class 155: trains/class-155.md
+  - Class 156: trains/class-156.md
+  - Class 180: trains/class-180.md
+  - Class 458: trains/class-458.md
+  - Class 994: trains/class-994.md
+  - HST: trains/hst.md
+- Companies:
+  - companies/index.md
+  - Coastline: companies/coastline.md
+  - Express: companies/express.md
+  - JetRail: companies/jetrail.md
+  - MetroLink: companies/metrolink.md
+- Jobs:
+  - jobs/index.md
+  - Conductor: jobs/conductor.md
+  - Dispatcher: jobs/dispatcher.md
+  - Maintenance: jobs/maintenance.md
+  - Signaler: jobs/signaler.md
+  - Station Staff: jobs/station-staff.md
+  - Train Operator: jobs/train-operator.md
+- Guides:
+  - Driving a route: guides/driving.md
+- About: about.md
