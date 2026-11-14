@@ -1,0 +1,34 @@
+# RWU signal panel: a Cloudflare Worker. See README.md in this folder.
+name = "rwu-signal-panel"
+main = "src/worker.js"
+compatibility_date = "2025-06-01"
+
+# The Worker answers only these addresses on rb.repeaternation.com. Everything else on that name
+# still goes to the Discord bot's own web server, exactly as before. They are the addresses the game
+# already uses, so nothing has to be changed in the game.
+routes = [
+  { pattern = "rb.repeaternation.com/server/signalbox*", zone_name = "repeaternation.com" },
+  { pattern = "rb.repeaternation.com/signalbox/*", zone_name = "repeaternation.com" },
+  { pattern = "rb.repeaternation.com/ws/*", zone_name = "repeaternation.com" },
+  { pattern = "rb.repeaternation.com/panel*", zone_name = "repeaternation.com" },
+  { pattern = "rb.repeaternation.com/server/livemap*", zone_name = "repeaternation.com" },
+  { pattern = "rb.repeaternation.com/livemap*", zone_name = "repeaternation.com" },
+]
+
+# The page (public/panel.html is served at /panel). Requests for these files do not count
+# against the free plan's daily request limit.
+[assets]
+directory = "./public"
+
+# One always-the-same object that remembers the latest update from the game (in memory only).
+[[durable_objects.bindings]]
+name = "HUB"
+class_name = "PanelHub"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["PanelHub"]
+
+# The key is NOT in this file. Set it once as a secret named RWU_API_KEY
+# (Cloudflare dashboard > the Worker > Settings > Variables and Secrets), with the same value
+# as the game's "discord_bot_key" secret.
