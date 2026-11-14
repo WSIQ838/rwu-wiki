@@ -7,7 +7,17 @@ The live map page (`docs/live.md`) shows who is playing and which train they are
 2. **The status server** keeps the latest update from each game server and offers them to browsers.
 3. **The wiki** reads `GET <status server>/livemap` every 10 seconds. Put that address in `docs/assets/live-config.js` (`feed`).
 
+## The ready-made status server
+
+The `signal-panel` folder of this repo is a Cloudflare Worker that already has both addresses below
+(`POST /server/livemap` and `GET /livemap`) on `rb.repeaternation.com`, together with the signallers'
+second-screen page. Once it is deployed (see `signal-panel/README.md`), set `feed` in
+`docs/assets/live-config.js` to `https://rb.repeaternation.com/livemap` and nothing needs adding to the bot.
+
 ## What the status server needs
+
+(Only if you would rather add it to the bot's own web server.)
+
 
 Two small additions next to the existing `/server/heartbeat` handler:
 
