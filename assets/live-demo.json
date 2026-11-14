@@ -1,0 +1,92 @@
+{
+ "servers": [
+  {
+   "v": 1,
+   "serverId": "sample",
+   "time": 0,
+   "players": 5,
+   "maxPlayers": 60,
+   "trains": [
+    {
+     "id": "T001",
+     "class": "ML155_BlueTeal_2",
+     "name": "MetroLink Class 155 (Blue and Teal), 2 cars",
+     "cars": 2,
+     "x": -3347,
+     "z": 52923,
+     "mph": 48,
+     "dest": "Thornbury",
+     "nextName": "Ashcombe",
+     "people": [
+      {
+       "name": "SamplePlayerOne",
+       "role": "Driver"
+      },
+      {
+       "name": "SamplePlayerTwo",
+       "role": "Conductor"
+      }
+     ]
+    },
+    {
+     "id": "T002",
+     "class": "EXHST_NavyPink_6",
+     "name": "Express HST (Navy and Pink), 6 cars",
+     "cars": 6,
+     "x": 14489,
+     "z": 19357,
+     "mph": 92,
+     "dest": "Gull Point",
+     "nextName": "Maple Heights",
+     "people": [
+      {
+       "name": "SamplePlayerThree",
+       "role": "Driver"
+      },
+      {
+       "name": "SamplePlayerFour",
+       "role": "Passenger"
+      }
+     ]
+    }
+   ],
+   "people": [
+    {
+     "name": "SamplePlayerOne",
+     "job": "Operator",
+     "role": "Driver",
+     "train": "T001",
+     "inMenu": false
+    },
+    {
+     "name": "SamplePlayerTwo",
+     "job": "Conductor",
+     "role": "Conductor",
+     "train": "T001",
+     "inMenu": false
+    },
+    {
+     "name": "SamplePlayerThree",
+     "job": "Operator",
+     "role": "Driver",
+     "train": "T002",
+     "inMenu": false
+    },
+    {
+     "name": "SamplePlayerFour",
+     "job": "",
+     "role": "Passenger",
+     "train": "T002",
+     "inMenu": false
+    },
+    {
+     "name": "SamplePlayerFive",
+     "job": "Dispatcher",
+     "inMenu": false,
+     "x": 0,
+     "z": 0
+    }
+   ]
+  }
+ ]
+}

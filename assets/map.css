@@ -1,0 +1,26 @@
+.rwu-sch { position: relative; background: #0a0f1c; border-radius: 8px; overflow: hidden; border: 1px solid #1f2a44; aspect-ratio: 2504 / 1604; touch-action: none; cursor: grab; user-select: none; }
+.rwu-sch.dragging { cursor: grabbing; }
+.rwu-sch-stage { position: absolute; left: 0; top: 0; width: 100%; transform-origin: 0 0; }
+.rwu-sch-stage img { display: block; width: 100%; height: auto; pointer-events: none; }
+.rwu-sch-stage svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; }
+.rwu-sch-stations circle { fill: transparent; stroke: transparent; stroke-width: 5; cursor: pointer; }
+.rwu-sch-stations a:hover circle, .rwu-sch-stations a:focus circle, .rwu-sch-stations circle.hit { stroke: #ffd84a; fill: rgba(255, 216, 74, .18); }
+.rwu-sch-tip { position: absolute; left: 10px; bottom: 10px; background: rgba(10,15,28,.9); color: #fff; padding: .35rem .6rem; border-radius: 6px; font-size: .75rem; pointer-events: none; max-width: calc(100% - 20px); }
+.rwu-sch-btns { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; }
+.rwu-sch-btns button { width: 32px; height: 32px; border: 0; border-radius: 6px; background: #1f2a44; color: #fff; font-size: 18px; cursor: pointer; }
+.rwu-sch-btns button:hover { background: #2c3a5e; }
+/* live map */
+.rwu-live-status { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; margin: .6rem 0; font-size: .8rem; }
+.rwu-live-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: #7a8194; margin-right: .35rem; }
+.rwu-live-dot.on { background: #2ecc71; box-shadow: 0 0 0 3px rgba(46, 204, 113, .25); }
+.rwu-live-dot.off { background: #e67e22; }
+.rwu-live-demo { background: #e67e22; color: #111; padding: .1rem .5rem; border-radius: 4px; font-weight: 700; }
+.rwu-train { cursor: pointer; }
+.rwu-train circle { stroke: #fff; stroke-width: 4; }
+.rwu-train rect { fill: rgba(10, 15, 28, .92); stroke: #fff; stroke-width: 1.5; }
+.rwu-train text { fill: #fff; font: 700 22px Inter, system-ui, sans-serif; }
+.rwu-train.sel circle { stroke: #ffd84a; stroke-width: 7; }
+.rwu-live-card { border: 1px solid var(--md-default-fg-color--lightest, #ccc); border-radius: 8px; padding: .6rem .8rem; margin: .6rem 0; font-size: .8rem; }
+.rwu-live-card h4 { margin: 0 0 .3rem; }
+#rwu-live-table tr.sel { outline: 2px solid #ffd84a; }
+#rwu-live-table tr[data-train] { cursor: pointer; }
